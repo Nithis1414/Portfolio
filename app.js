@@ -85,6 +85,16 @@ function initContent() {
     document.getElementById("resume-btn").href = c.personal.resumeLink;
   }
 
+  // Hero Socials
+  const heroSocials = document.querySelector(".hero-socials");
+  if (heroSocials) {
+    let html = "";
+    if (c.social.email) html += `<a href="mailto:${c.social.email}" class="highlighted-icon" title="Email"><i class="fas fa-envelope"></i></a>`;
+    if (c.social.linkedin) html += `<a href="${c.social.linkedin}" target="_blank" class="highlighted-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>`;
+    if (c.social.github && c.social.github !== "#") html += `<a href="${c.social.github}" target="_blank" class="highlighted-icon" title="GitHub"><i class="fab fa-github"></i></a>`;
+    heroSocials.innerHTML = html;
+  }
+
   // About
   document.getElementById("about-heading").textContent = c.about.heading;
   document.getElementById("about-description").textContent = c.about.description;
@@ -114,12 +124,8 @@ function initContent() {
     <div class="skill-card reveal" style="transition-delay: ${i * 0.08}s">
       <div class="skill-card-header">
         <div class="skill-icon"><i class="${s.icon}"></i></div>
-        <span class="skill-level">${s.level}%</span>
       </div>
       <div class="skill-name">${s.name}</div>
-      <div class="skill-bar">
-        <div class="skill-bar-fill" data-level="${s.level}"></div>
-      </div>
     </div>`
     )
     .join("");
@@ -281,12 +287,6 @@ function initScrollReveal() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
-
-          // Animate skill bars
-          const bars = entry.target.querySelectorAll(".skill-bar-fill");
-          bars.forEach((bar) => {
-            bar.style.width = bar.dataset.level + "%";
-          });
         }
       });
     },

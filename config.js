@@ -33,13 +33,13 @@ const CONFIG = {
 
   // ─── Skills ─────────────────────────────────
   skills: [
-    { name: "Python", level: 90, icon: "fab fa-python", category: "language" },
-    { name: "Java", level: 85, icon: "fab fa-java", category: "language" },
-    { name: "MySQL", level: 80, icon: "fas fa-database", category: "database" },
-    { name: "PostgreSQL", level: 75, icon: "fas fa-database", category: "database" },
-    { name: "HTML5/CSS3", level: 85, icon: "fab fa-html5", category: "frontend" },
-    { name: "AWS", level: 75, icon: "fab fa-aws", category: "cloud" },
-    { name: "Git & GitHub", level: 80, icon: "fab fa-github", category: "tools" },
+    { name: "Python", icon: "fab fa-python", category: "language" },
+    { name: "Java", icon: "fab fa-java", category: "language" },
+    { name: "MySQL", icon: "fas fa-database", category: "database" },
+    { name: "PostgreSQL", icon: "fas fa-database", category: "database" },
+    { name: "HTML5/CSS3", icon: "fab fa-html5", category: "frontend" },
+    { name: "AWS", icon: "fab fa-aws", category: "cloud" },
+    { name: "Git & GitHub", icon: "fab fa-github", category: "tools" },
   ],
 
   // ─── Projects ───────────────────────────────
@@ -115,7 +115,7 @@ const CONFIG = {
     phone: "7538890810",
     email: "nithisvarun1408@gmail.com",
     linkedin: "https://www.linkedin.com/in/nithis-varun-k-771261296/",
-    github: "#",
+    github: "https://github.com/Nithis1414",
     twitter: "",  // leave empty to hide
     website: "",
   },
