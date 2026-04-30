@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nithis Varun K Portfolio — Showcasing expertise in Python, Java, AI, and ML." />
+  <title>Nithis Varun K — Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ═══ Particle Canvas ═══ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo" id="nav-logo">Portfolio</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hackathons">Hackathons</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="nav-customize-btn" id="open-customize" aria-label="Customize Theme">
+        <i class="fas fa-palette"></i> Customize
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span>Open to Opportunities</span>
+      </div>
+      <h1 class="hero-name">
+        Hi, I'm <span class="gradient-text" id="hero-name">Nithis Varun K</span>
+      </h1>
+      <p class="hero-title" id="hero-title">AI Engineer</p>
+      <p class="hero-tagline" id="hero-tagline">
+        <span id="typed-text"></span><span class="cursor"></span>
+      </p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-primary" id="resume-btn" download="Nithis_Varun_Resume.pdf">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+      <div class="hero-socials" style="margin-top:24px; display:flex; gap:16px; justify-content:center;">
+        <a href="mailto:nithisvarun1408@gmail.com" class="highlighted-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/nithis-varun-k" target="_blank" class="highlighted-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-tag">Get to know me</span>
+      <h2 class="section-title" id="about-heading">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="avatar-frame" id="avatar-frame">
+          <span class="avatar-placeholder"><i class="fas fa-user"></i></span>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p id="about-description"></p>
+        <div class="about-highlights" id="about-highlights">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-tag">What I bring</span>
+      <h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-subtitle">Technologies and strengths I leverage to build intelligent solutions.</p>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-tag">My work</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Hands-on projects that demonstrate my ability to build real-world AI solutions.</p>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ═══ HACKATHONS ═══ -->
+  <section id="hackathons">
+    <div class="section-header reveal">
+      <span class="section-tag">Competitions</span>
+      <h2 class="section-title">Hackathons</h2>
+      <p class="section-subtitle">Showcasing problem-solving and innovation under pressure.</p>
+    </div>
+    <div class="projects-grid" id="hackathons-grid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATIONS ═══ -->
+  <section id="certifications">
+    <div class="section-header reveal">
+      <span class="section-tag">Credentials</span>
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-subtitle">Validated expertise through industry-recognized certifications.</p>
+    </div>
+    <div class="certs-grid" id="certs-grid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ═══ JOURNEY (Timeline) ═══ -->
+  <section id="journey">
+    <div class="section-header reveal">
+      <span class="section-tag">My path</span>
+      <h2 class="section-title">Journey</h2>
+      <p class="section-subtitle">Education and experience that shaped my career.</p>
+    </div>
+    <div class="timeline" id="timeline">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-tag">Let's connect</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Interested in working together? I'd love to hear from you.</p>
+    </div>
+    <div class="contact-content reveal">
+      <div class="contact-links" id="contact-links">
+        <!-- Populated by JS -->
+      </div>
+      <form class="contact-form" id="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" placeholder="How can I help you?"></textarea>
+        </div>
+        <div class="form-submit">
+          <button class="btn btn-primary" type="submit" style="width:100%;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <p>Designed & built with <span>♥</span> — &copy; <span id="footer-year"></span> <span id="footer-name"></span></p>
+  </footer>
+
+  <!-- ═══ Customization Panel ═══ -->
+  <div class="customize-overlay" id="customize-overlay"></div>
+  <div class="customize-panel" id="customize-panel">
+    <div class="customize-header">
+      <h3><i class="fas fa-palette"></i>&nbsp; Customize</h3>
+      <button class="customize-close" id="close-customize" aria-label="Close Panel">&times;</button>
+    </div>
+
+    <!-- Primary Color -->
+    <div class="customize-group">
+      <label>Primary Color</label>
+      <div class="color-options" id="primary-colors">
+        <div class="color-swatch active" style="background:#6C63FF" data-color="#6C63FF"></div>
+        <div class="color-swatch" style="background:#FF6B6B" data-color="#FF6B6B"></div>
+        <div class="color-swatch" style="background:#4ECDC4" data-color="#4ECDC4"></div>
+        <div class="color-swatch" style="background:#FFD93D" data-color="#FFD93D"></div>
+        <div class="color-swatch" style="background:#A855F7" data-color="#A855F7"></div>
+        <div class="color-swatch" style="background:#F97316" data-color="#F97316"></div>
+        <div class="color-swatch" style="background:#EC4899" data-color="#EC4899"></div>
+      </div>
+      <div class="custom-color-input">
+        <input type="color" id="custom-primary" value="#6C63FF" />
+        <span>Custom color</span>
+      </div>
+    </div>
+
+    <!-- Secondary Color -->
+    <div class="customize-group">
+      <label>Accent Color</label>
+      <div class="color-options" id="secondary-colors">
+        <div class="color-swatch active" style="background:#00D4AA" data-color="#00D4AA"></div>
+        <div class="color-swatch" style="background:#6C63FF" data-color="#6C63FF"></div>
+        <div class="color-swatch" style="background:#FF6B6B" data-color="#FF6B6B"></div>
+        <div class="color-swatch" style="background:#FFD93D" data-color="#FFD93D"></div>
+        <div class="color-swatch" style="background:#38BDF8" data-color="#38BDF8"></div>
+      </div>
+      <div class="custom-color-input">
+        <input type="color" id="custom-secondary" value="#00D4AA" />
+        <span>Custom color</span>
+      </div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="customize-group">
+      <label>Appearance</label>
+      <div class="toggle-switch">
+        <span>Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Font Family -->
+    <div class="customize-group">
+      <label>Font</label>
+      <div class="font-options" id="font-options">
+        <div class="font-option active" data-font="'Inter', sans-serif" style="font-family:'Inter',sans-serif">Inter (Default)</div>
+        <div class="font-option" data-font="'Outfit', sans-serif" style="font-family:'Outfit',sans-serif">Outfit</div>
+        <div class="font-option" data-font="'Georgia', serif" style="font-family:'Georgia',serif">Georgia</div>
+        <div class="font-option" data-font="'Courier New', monospace" style="font-family:'Courier New',monospace">Courier (Monospace)</div>
+      </div>
+    </div>
+
+    <!-- Particles Toggle -->
+    <div class="customize-group">
+      <label>Effects</label>
+      <div class="toggle-switch">
+        <span>Particles Background</span>
+        <label class="switch">
+          <input type="checkbox" id="particles-toggle" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Reset -->
+    <div class="customize-group">
+      <button class="reset-btn" id="reset-theme" aria-label="Reset to Default">
+        <i class="fas fa-undo"></i>&nbsp; Reset to Default
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══ Scripts ═══ -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
