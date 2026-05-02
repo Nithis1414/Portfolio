@@ -33,13 +33,13 @@ const CONFIG = {
 
   // ─── Skills ─────────────────────────────────
   skills: [
-    { name: "Python", icon: "fab fa-python", category: "language" },
-    { name: "Java", icon: "fab fa-java", category: "language" },
-    { name: "MySQL", icon: "fas fa-database", category: "database" },
-    { name: "PostgreSQL", icon: "fas fa-database", category: "database" },
-    { name: "HTML5/CSS3", icon: "fab fa-html5", category: "frontend" },
-    { name: "AWS", icon: "fab fa-aws", category: "cloud" },
-    { name: "Git & GitHub", icon: "fab fa-github", category: "tools" },
+    { name: "Python", icon: "fab fa-python", category: "Programming Languages" },
+    { name: "Java", icon: "fab fa-java", category: "Programming Languages" },
+    { name: "MySQL", icon: "fas fa-database", category: "Databases" },
+    { name: "PostgreSQL", icon: "fas fa-database", category: "Databases" },
+    { name: "HTML5/CSS3", icon: "fab fa-html5", category: "Frontend Development" },
+    { name: "AWS", icon: "fab fa-aws", category: "Cloud Services" },
+    { name: "Git & GitHub", icon: "fab fa-github", category: "Development Tools" },
   ],
 
   // ─── Projects ───────────────────────────────

@@ -559,6 +559,30 @@ section {
   gap: 20px;
 }
 
+.skill-category-group {
+  grid-column: 1 / -1;
+  margin: 40px 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.skill-category-group::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--glass-border), transparent);
+}
+
+.category-title {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--text-muted);
+}
+
 .skill-card {
   padding: 28px;
   background: var(--bg-card);

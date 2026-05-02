@@ -118,17 +118,27 @@ function initContent() {
 
   // Skills
   const skillsGrid = document.getElementById("skills-grid");
-  skillsGrid.innerHTML = c.skills
-    .map(
-      (s, i) => `
-    <div class="skill-card reveal" style="transition-delay: ${i * 0.08}s">
-      <div class="skill-card-header">
-        <div class="skill-icon"><i class="${s.icon}"></i></div>
+  const groupedSkills = c.skills.reduce((acc, skill) => {
+    const cat = skill.category || "Other";
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push(skill);
+    return acc;
+  }, {});
+
+  skillsGrid.innerHTML = Object.entries(groupedSkills)
+    .map(([category, skills]) => `
+      <div class="skill-category-group reveal">
+        <h3 class="category-title">${category}</h3>
       </div>
-      <div class="skill-name">${s.name}</div>
-    </div>`
-    )
-    .join("");
+      ${skills.map((s, i) => `
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="${s.icon}"></i></div>
+          </div>
+          <div class="skill-name">${s.name}</div>
+        </div>
+      `).join("")}
+    `).join("");
 
   // Projects
   const projectsGrid = document.getElementById("projects-grid");
