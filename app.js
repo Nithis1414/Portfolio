@@ -223,8 +223,7 @@ function initContent() {
     socials.push(`<a href="tel:${c.social.phone}" class="contact-link"><i class="fas fa-phone"></i>${c.social.phone}</a>`);
   if (c.social.email)
     socials.push(`<a href="mailto:${c.social.email}" class="contact-link"><i class="fas fa-envelope"></i>${c.social.email}</a>`);
-  if (c.social.github && c.social.github !== "#")
-    socials.push(`<a href="${c.social.github}" target="_blank" class="contact-link"><i class="fab fa-github"></i>GitHub</a>`);
+
   if (c.social.twitter)
     socials.push(`<a href="${c.social.twitter}" target="_blank" class="contact-link"><i class="fab fa-twitter"></i>Twitter</a>`);
   contactLinks.innerHTML = socials.join("");

@@ -115,7 +115,7 @@ const CONFIG = {
     phone: "7538890810",
     email: "nithisvarun1408@gmail.com",
     linkedin: "https://www.linkedin.com/in/nithis-varun-k-771261296/",
-    github: "",
+    github: "https://github.com/Nithis1414",
     twitter: "",  // leave empty to hide
     website: "",
   },
