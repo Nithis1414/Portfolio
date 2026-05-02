@@ -57,7 +57,7 @@ const CONFIG = {
     {
       title: "Bus Booking System",
       description: "Developed a comprehensive bus booking application for all Tamil Nadu districts, including inter-state routes to Bengaluru and Hyderabad. Integrated real-time seat selection, location swapping, and secure payment processing with Razorpay.",
-      techStack: ["Flask", "SQLite", "Razorpay", "JavaScript"],
+      techStack: ["Frontend", "Backend", "Razorpay"],
       liveLink: "#",
       repoLink: "https://github.com/Nithis1414/Bus_Booking_System",
       image: "",
@@ -97,16 +97,16 @@ const CONFIG = {
     {
       type: "education",
       title: "B.E CSE(AIML)",
-      organization: "RATHINAM TECHNICAL CAMPUS",
+      organization: "RATHINAM TECHNICAL CAMPUS, Coimbatore",
       period: "2023 - Present",
-      description: "CGPA: 8.14 | Coimbatore",
+      description: "CGPA: 8.14",
     },
     {
       type: "education",
       title: "HSC",
-      organization: "AKSHAYA ACADEMY SENIOR SECONDARY SCHOOL",
+      organization: "AKSHAYA ACADEMY SENIOR SECONDARY SCHOOL, Dindigul",
       period: "2022 - 2023",
-      description: "81% | Dindigul",
+      description: "81%",
     }
   ],
 
@@ -115,7 +115,7 @@ const CONFIG = {
     phone: "7538890810",
     email: "nithisvarun1408@gmail.com",
     linkedin: "https://www.linkedin.com/in/nithis-varun-k-771261296/",
-    github: "https://github.com/Nithis1414",
+    github: "",
     twitter: "",  // leave empty to hide
     website: "",
   },
