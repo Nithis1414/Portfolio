@@ -554,9 +554,15 @@ section {
 
 /* ─── SKILLS SECTION ───────────────────────── */
 .skills-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skill-category-wrapper {
