@@ -127,17 +127,19 @@ function initContent() {
 
   skillsGrid.innerHTML = Object.entries(groupedSkills)
     .map(([category, skills]) => `
-      <div class="skill-category-group reveal">
-        <h3 class="category-title">${category}</h3>
-      </div>
-      ${skills.map((s, i) => `
-        <div class="skill-card reveal">
-          <div class="skill-card-header">
-            <div class="skill-icon"><i class="${s.icon}"></i></div>
-          </div>
-          <div class="skill-name">${s.name}</div>
+      <div class="skill-category-wrapper reveal">
+        <div class="skill-category-header">
+          <h3 class="category-title">${category}</h3>
         </div>
-      `).join("")}
+        <div class="skills-badges">
+          ${skills.map((s, i) => `
+            <div class="skill-badge reveal">
+              <div class="skill-badge-icon"><i class="${s.icon}"></i></div>
+              <span class="skill-badge-name">${s.name}</span>
+            </div>
+          `).join("")}
+        </div>
+      </div>
     `).join("");
 
   // Projects
