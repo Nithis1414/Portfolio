@@ -50,7 +50,7 @@ const CONFIG = {
         "Developed an intelligent healthcare assistant application for medicine scheduling. Implemented prescription tracking, voice-enabled reminders, and an AI-powered chatbot for instant healthcare guidance. Designed a secure and responsive dashboard with authentication.",
       techStack: ["Frontend", "Backend", "AI Chatbot", "Authentication"],
       liveLink: "#",
-      repoLink: "#",
+      repoLink: "https://github.com/Nithis1414/Smart_Medicine_Remainder",
       image: "", // optional project screenshot
       featured: true,
     },
@@ -59,7 +59,7 @@ const CONFIG = {
       description: "Developed a comprehensive bus booking application for all Tamil Nadu districts, including inter-state routes to Bengaluru and Hyderabad. Integrated real-time seat selection, location swapping, and secure payment processing with Razorpay.",
       techStack: ["Flask", "SQLite", "Razorpay", "JavaScript"],
       liveLink: "#",
-      repoLink: "#",
+      repoLink: "https://github.com/Nithis1414/Bus_Booking_System",
       image: "",
       featured: true,
     }
